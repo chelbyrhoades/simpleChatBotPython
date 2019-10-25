@@ -2,9 +2,9 @@ import random
 import time
 import socket
 
-print("Welcome to MilitaryBot.")
+print("Welcome to serra bot .")
 greet = ["hello", "hi", "hola"]
-greetR = ["hello citizen", "hello human", "Welcome to a non-suspicious base."]
+greetR = ["hello sir", "hello mister", "Welcome to a best ai zone."]      #changing in the greetR and print statement
 pun = ["Wat do you call a fake noodle? An impasta!", "What do you call a fish that doesn't share? Shellfish."]
 secrets = ["Tupac is still alive", "Parker is the leader of the illuminati", "Cilantro is devil spawn", "Birds aren't real.", "Elon Musk is a martian", "Captain America is from Canada", "Alexa is always listening", "Billie Eilish is an alien", "Donald Trump is a cat person", "Chuck Norris is our leader"]
 
@@ -17,12 +17,12 @@ while True:
 		response = random.choice(pun)
 		print(response)
 	elif ask == "goodbye":
-		print("Goodbye!")
-		break
+		print("Goodbye sir!")                        #changing in the elif print statement ans also else statement comment
+		break                              
 	elif ask == "shut up":
-		print("Excuse me??? I am the government, I will end you.")
+		print("Excuse me??? I am your bot you can't talk me like this.")
 	elif ask == "area 51":
-		print("You're not authorized to know anything about that, citizen.")
+		print("You're not authorized to know anything about that, mister.")
 	elif ask == "password123":
 		response = random.choice(secrets)
 		print(response)
@@ -45,4 +45,4 @@ while True:
 		time.sleep(1)
 		print("Connected to IP " + socket.gethostbyname(socket.gethostname()))
 	else:
-		print("I'm sorry, I didn't understand")
+		print("I'm sorry, I didn't understand what you said")
